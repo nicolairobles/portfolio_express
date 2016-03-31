@@ -10,13 +10,13 @@ app.use(express.static("public"));
 app.set("view engine", "ejs");
 
 // DB SETUP
-mongoose.connect("mongodb://localhost/portfolio");
-var contactSchema = new mongoose.Schema({
-	name: String, 
-	email: String, 
-	message: String
-});
-var Contact = mongoose.model("Contact", contactSchema);
+// mongoose.connect("mongodb://localhost/portfolio");
+// var contactSchema = new mongoose.Schema({
+// 	name: String, 
+// 	email: String, 
+// 	message: String
+// });
+// var Contact = mongoose.model("Contact", contactSchema);
 
 // DB VARIABLES
 // var George = new Contact({
@@ -57,60 +57,60 @@ var Contact = mongoose.model("Contact", contactSchema);
 // });
 
 // VARIABLES
-	var friends = ["Tony", "Dave", "Josue"];
+	// var friends = ["Tony", "Dave", "Josue"];
 
 // ROUTES
 
-app.get("/campgrounds", function(req, res){
-	Campground.find({}, function(err, allcampgrounds){
-		if (err) {
-			console.log("error rendering all campgrounds")
-		} else {
-			res.render("campgrounds", {campgrounds: allcampgrounds})
-		}
-	})
-});
+// app.get("/campgrounds", function(req, res){
+// 	Campground.find({}, function(err, allcampgrounds){
+// 		if (err) {
+// 			console.log("error rendering all campgrounds")
+// 		} else {
+// 			res.render("campgrounds", {campgrounds: allcampgrounds})
+// 		}
+// 	})
+// });
 
-app.post("/campgrounds", function(req, res){
-	var name = req.body.name;
-	var image = req.body.image;
-	var newCampground = {name: name, image: image};
-	Campground.create(newCampground, function(err, newlyCreated){
-		if (err) {
-			console.log(err)
-		} else{
-			res.redirect("/campgrounds");
-		}
-	})
-})
+// app.post("/campgrounds", function(req, res){
+// 	var name = req.body.name;
+// 	var image = req.body.image;
+// 	var newCampground = {name: name, image: image};
+// 	Campground.create(newCampground, function(err, newlyCreated){
+// 		if (err) {
+// 			console.log(err)
+// 		} else{
+// 			res.redirect("/campgrounds");
+// 		}
+// 	})
+// })
 
 app.get("/", function(req, res){
 	res.render("home")
 })
 
-app.get("/fallinlovewith/:thing", function(req, res){
-	var thing = req.params.thing;
-	res.render("love.ejs", {ThingVar: thing})
-})
+// app.get("/fallinlovewith/:thing", function(req, res){
+// 	var thing = req.params.thing;
+// 	res.render("love.ejs", {ThingVar: thing})
+// })
 
-app.get("/posts", function(req, res){
-	var posts = [
-		{title: "Post 1", author: "Susy"}, 
-		{title: "My adorable pet bunny", author: "Charlie"}, 
-		{title: "Can you believe this Pomsky", author: "Colt"}
-	]
-	res.render("posts.ejs", {posts: posts})
-})
+// app.get("/posts", function(req, res){
+// 	var posts = [
+// 		{title: "Post 1", author: "Susy"}, 
+// 		{title: "My adorable pet bunny", author: "Charlie"}, 
+// 		{title: "Can you believe this Pomsky", author: "Colt"}
+// 	]
+// 	res.render("posts.ejs", {posts: posts})
+// })
 
-app.post("/addfriend", function(req, res){
-	var newFriend = req.body.newfriend;
-	friends.push(newFriend);
-	res.redirect("/friends");
-})
+// app.post("/addfriend", function(req, res){
+// 	var newFriend = req.body.newfriend;
+// 	friends.push(newFriend);
+// 	res.redirect("/friends");
+// })
 
-app.get("/friends", function(req, res){
-	res.render("friends", {friends: friends});
-})
+// app.get("/friends", function(req, res){
+// 	res.render("friends", {friends: friends});
+// })
 
 // SERVER SETUP
 app.listen(3000, function(){
