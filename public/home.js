@@ -209,22 +209,22 @@ function showVideo(el) {
 		$('iframe').remove();				
 		
 		// get right video
-		var vimeoId = el.attr('data-video');
-		var video = '<iframe src="http://player.vimeo.com/video/' + vimeoId + '?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=1&amp;badge=0&amp;color=' + vimeoColor + '" width="100%" height="100%" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>';
+		// var vimeoId = el.attr('data-video');
+		// var video = '<iframe src="http://player.vimeo.com/video/' + vimeoId + '?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=1&amp;badge=0&amp;color=' + vimeoColor + '" width="100%" height="100%" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>';
 		
 		// hide preview, show video
-		$('section.full').removeClass('playing').removeClass('video16');
+		// $('section.full').removeClass('playing').removeClass('video16');
 		
 		// check for video dimension
 		// resize box if not 21:9
-		if(el.hasClass("video16")) {
-			el.parents('section').addClass("video16").addClass("playing");
-		  window.setTimeout(function(){
-		  	el.hide().parent('.video').append(video);
-		  }, 800);		  
-		} else {		
-			el.hide().parent('.video').append(video).parents('section').addClass("playing");
-		}
+		// if(el.hasClass("video16")) {
+		// 	el.parents('section').addClass("video16").addClass("playing");
+		//   window.setTimeout(function(){
+		//   	el.hide().parent('.video').append(video);
+		//   }, 800);		  
+		// } else {		
+		// 	el.hide().parent('.video').append(video).parents('section').addClass("playing");
+		// }
 	 
 	}, 360);
 
