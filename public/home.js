@@ -1,7 +1,3 @@
-/* script 
- * Written by Raffael Stueken
- */ 
-
 var scrolledWin = 0, winW, winH, winR, screenH, emS, screensI = 0, scrolled = 0, theS = 1, exp = false, trans3D = false, thisL = 0, topL, leftL, sizeL = 1, inBetween = [], aboutOff, about = false, menuH = 0, imprintOff = 0, showLetter, bigL = true;
 var $screen = [], $offSet = [], $contentWrapper = [], $navLink = [], $navCount = [], inView = [], $h4 = [];
 
@@ -150,6 +146,10 @@ function start() {
 		  var landerM = (winH / 2) + 100;
 		  // $lander.css({marginBottom: landerM});
 		  	
+	  	// fade in copyright
+	  	// window.setTimeout(function() {			
+		  //   $("footer.copyright").addClass("active");		    		  
+		  // }, 1500);
 		
 		  window.setTimeout(function() {			
 		  	// show showreel
