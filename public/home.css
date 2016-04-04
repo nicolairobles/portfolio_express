@@ -1217,7 +1217,7 @@ iframe {
                 padding: 0 1em 0 0; } }
   /* line 746, ../sass/main/_main.scss */
   .container .infoShown .video {
-    opacity: 0.3; }
+    opacity: 0.05; }
     /* line 749, ../sass/main/_main.scss */
     .container .infoShown .video .playButton {
       opacity: 0; }
@@ -1594,7 +1594,7 @@ nav {
   border-bottom: 1px solid white;
   line-height: 2;
   display: inline-block;
-  margin-right: 3em;
+  margin: 0 3em;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   -o-transition: all 0.2s;
