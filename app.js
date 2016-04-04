@@ -113,6 +113,6 @@ app.get("/", function(req, res){
 // })
 
 // SERVER SETUP
-app.listen(process.env.PORT || 3000, function(){
+app.listen(process.env.PORT || 4000, function(){
 	console.log("server is listening")
 })

@@ -22,12 +22,14 @@ var dt1 = 500, dt2 = 8000;
 var bigL1 = 50, bigL2 = 100;
 var starting = true;
 var started = false;
-var poolS = '&brvbar; &nabla; &oline; &deg; &Delta; &bull;';
+// var poolS = '&brvbar; &nabla; &oline; &deg; &Delta; &bull;';
+var poolS = '&bull; &deg;';
 var randomCharS = poolS.split(' '); 
 
 
 // random special character
-var pool = '&brvbar; &nabla; &oline; &otimes; &brvbar; &bull; &deg; &Delta; &mdash; &lang; &loz; &rarr; &there4; &times; | 1 2 3 4 5 6 8 9 START';
+var pool = '&bull; &deg;';
+// var pool = '1';
 var randomChar = pool.split(' '); 
 
 // remove js class
