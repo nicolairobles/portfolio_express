@@ -3,9 +3,7 @@ var express 	= require("express"),
 	app 				= express(),
 	pry 				= require("pryjs"),
 	bodyParser 	= require("body-parser"), 
-	mongoose 		= require("mongoose")
-  Phantom 		= require('phantom'),
- 	tmpdir 			= require('os').tmpdir(),
+	mongoose 		= require("mongoose"),
   fs 					= require('fs')
 
 app.use(bodyParser.urlencoded({extended: true}));
