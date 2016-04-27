@@ -4,10 +4,19 @@ var express 	= require("express"),
 	pry 				= require("pryjs"),
 	bodyParser 	= require("body-parser"), 
 	mongoose 		= require("mongoose")
+  Phantom 		= require('phantom'),
+ 	tmpdir 			= require('os').tmpdir(),
+  fs 					= require('fs')
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 app.set("view engine", "ejs");
+
+// PDF Headers
+// function setResponseHeaders(res, filename) {
+//   res.header('Content-disposition', 'inline; filename=' + filename);
+//   res.header('Content-type', 'application/pdf');
+// }
 
 // DB SETUP
 // mongoose.connect("mongodb://localhost/portfolio");
@@ -87,6 +96,40 @@ app.set("view engine", "ejs");
 app.get("/", function(req, res){
 	res.render("home")
 })
+
+app.get('/resume', function(request, response){
+  var tempFile="./public/images/Nicolai_Robles_Resume.pdf";
+  fs.readFile(tempFile, function (err,data){
+     response.contentType("application/pdf");
+     response.send(data);
+     if (err) {
+			console.log(err)
+		}
+  });
+});
+
+// app.get('/resume', function(req, res, next) {
+//   var filename = req.params.filename;
+//   file = tmpdir + filename;
+//   setResponseHeaders(res, filename);
+
+//   Phantom.create(function(phantom) {
+//     phantom.createPage(function(page) {
+
+//       // Render PDF and send to browser
+//       function dispatchPDF() {
+//         page.render(file, function() {
+//           fs.createReadStream(file).pipe(res);
+//           phantom.exit();
+//         });
+//       };
+
+//       page.set('content', "<p>hello i am content</p>");
+//       page.set('paperSize', '5in');
+//       page.set('onLoadFinished', dispatchPDF);
+//     });
+//   });
+// });
 
 // app.get("/fallinlovewith/:thing", function(req, res){
 // 	var thing = req.params.thing;
