@@ -4,11 +4,15 @@ var express 	= require("express"),
 	pry 				= require("pryjs"),
 	bodyParser 	= require("body-parser"), 
 	mongoose 		= require("mongoose"),
-  fs 					= require('fs')
+  fs 					= require('fs'),
+  vidStreamer = require("vid-streamer")
 
+app.createServer;
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 app.set("view engine", "ejs");
+
+
 
 // PDF Headers
 // function setResponseHeaders(res, filename) {
@@ -105,6 +109,24 @@ app.get('/resume', function(request, response){
 		}
   });
 });
+
+
+app.get("/video", function(req, res){
+	res.render("video");
+});
+
+// app.get('/video', function(request, response){
+//   var tempFile="./public/images/Nicolai_Robles_Resume.pdf";
+//   fs.readFile(tempFile, function (err,data){
+//      response.contentType("application/pdf");
+//      response.send(data);
+//      if (err) {
+// 			console.log(err)
+// 		}
+//   });
+// });
+
+
 
 // app.get('/resume', function(req, res, next) {
 //   var filename = req.params.filename;
