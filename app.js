@@ -176,6 +176,6 @@ app.get("/video", function(req, res){
 // })
 
 // SERVER SETUP
-app.listen(process.env.PORT || 4000, function(){
+app.listen(process.env.PORT || 5000, function(){
 	console.log("server is listening")
 })

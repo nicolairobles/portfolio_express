@@ -556,7 +556,7 @@ h4 {
 /* start animation */
 /* line 90, ../sass/main/_main.scss */
 .js section {
-  display: none; }
+  display: inherit; }
 /* line 99, ../sass/main/_main.scss */
 .js #lander {
   display: block; }
@@ -1721,3 +1721,15 @@ nav {
 /* line 1280, ../sass/main/_main.scss */
 body.scrolling #wrapper {
   padding-bottom: 200px; }
+
+
+.home {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  background: url(../images/output.gif) #333 40% 40%;
+  background-size: cover;
+  -webkit-filter: brightness(20%);
+  filter: brightness(20%);
+}
