@@ -15,11 +15,11 @@ app.set("view engine", "ejs");
 app.get("/", function(req, res){
 	res.render("home")
 })
-app.get("/projects/project-1", function(req, res){
-	res.render("projects/project-1")
+app.get("/emotize-project", function(req, res){
+	res.render("projects/emotize")
 })
-app.get("/project-2", function(req, res){
-	res.render("project-2")
+app.get("/chorus-project", function(req, res){
+	res.render("projects/chorus")
 })
 app.get("/beat-the-machine-project", function(req, res){
 	res.render("projects/beat-the-machine")
