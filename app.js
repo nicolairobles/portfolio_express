@@ -22,11 +22,11 @@ app.get("/project-2", function(req, res){
 	res.render("project-2")
 })
 app.get("/beat-the-machine-project", function(req, res){
-	res.render("beat-the-machine")
+	res.render("projects/beat-the-machine")
 })
-app.get("/beat-the-machine", function(req, res){
-	res.render("projects/live/beat-the-machine")
-})
+// app.get("/beat-the-machine", function(req, res){
+// 	res.render("projects/live/beat-the-machine")
+// })
 
 app.get('/resume', function(request, response){
   var tempFile="./public/documents/Nicolai_Robles_Resume.pdf";
