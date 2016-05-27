@@ -1309,7 +1309,7 @@ ul.info-list li strong {
     vertical-align: top;
     font-size: 30px;
     text-align: center;
-    color: #F34452;
+    color: black;
 }
 
 .contact-details, .contact-icon {
@@ -1321,7 +1321,7 @@ ul.info-list li strong {
     margin-bottom: 0;
 }
 
-.error-form {
+/*.error-form {
     float: right;
     margin: -24px 2px 0 0;
     position: relative;
@@ -1333,13 +1333,13 @@ ul.info-list li strong {
     font-size: 100%;
     vertical-align: top;
     margin-right: 10px;
-}
+}*/
 
 .alert-success {
     text-align: left;
 }
 
-#formcontactus .form-control {
+/*#formcontactus .form-control {
     background-color: transparent;
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -1359,14 +1359,14 @@ ul.info-list li strong {
 
 #formcontactus textarea {
     resize: none;
-}
+}*/
 
 
 /* -------------------------
         8. CONTENT BLOCKS
 ------------------------- */ 
 .inline-menu-container {
-    background: #F1F3F6;
+    background: white;
     position: fixed;
     width: 70%;
     left: 30%;
@@ -1402,7 +1402,7 @@ ul.info-list li strong {
 
 .inline-menu li.active {
     /*text-decoration: line-through;*/
-    cursor: text;
+    cursor: pointer;
 }
 #project-modal,
 #post-modal,
@@ -1962,12 +1962,40 @@ img, iframe, input {
 
 /* line 39, ../sass/main/_main.scss */
 a {
-  color: white;
+  color: #333;
   text-decoration: none; }
-
+a.resume-nav {
+  color: #333;
+  text-decoration: none; }
 /* line 44, ../sass/main/_main.scss */
 a:hover {
-  text-decoration: none; }
+  text-decoration: none; 
+  color: inherit;
+}
+a.portfolio {
+  text-decoration: none; 
+  color: white;
+}
+a.resume {
+  text-decoration: none; 
+  color: white;
+}
+a.resume:visited {
+  text-decoration: none; 
+  color: white;
+}
+a.portfolio:hover {
+  text-decoration: none; 
+  color: white;
+}
+a.resume:hover {
+  text-decoration: none; 
+  color: white;
+}
+a:focus {
+  text-decoration: none; 
+  color: inherit;
+}
 
 /* line 48, ../sass/main/_main.scss */
 p {
