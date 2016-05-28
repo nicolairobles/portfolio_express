@@ -28,7 +28,7 @@
 	<div class="inline-menu-container hidex">
 		<ul class="inline-menu">
 			<li class="portfolio menu-item" style="text-transform: uppercase">Portfolio</li>		
-			<li class="resume" style="text-transform: uppercase"><a class="resume-nav" href="/resume" target="_blank">Resume</a></li>
+			<li class="resume menu-item" style="text-transform: uppercase"><!-- <a class="resume-nav" href="/resume" target="_blank">Resume</a> -->Resume</li>
 			<li class="contact menu-item" style="text-transform: uppercase">Contact</li>
 			<li id="close">&times;</li>
 		</ul>
@@ -53,7 +53,8 @@
 		  	<h1><span class="nicolai">Nicolai</span> <span class="robles">Robles</span></h1>
 
 		  	<h2 class="portfolio menu-item" style="text-transform: lowercase;"><a class="portfolio">Portfolio</a></h2>
-		  	<h2 class="resume" style="text-transform: lowercase;"><a class="resume" target="_blank" href="/resume">Resume</a></h2>
+		  	<h2 class="resume menu-item" style="text-transform: lowercase;"><a class="resume">Resume</a></h2>
+		  	<h2 class="contact menu-item" style="text-transform: lowercase;"><a class="contact">Contact</a></h2>
 		  	<!-- <h2 class="contact menu-item" style="text-transform: lowercase;"><a>Contact</a></h2> -->
 		  	<style type="text/css">
 		  		a{
@@ -116,15 +117,16 @@
 					<div class="row">
 						<div class="col-md-12">
 							<ul id="filters">
-							  <li class="active" data-filter="*">All</li>
-							  <li data-filter=".web">Web</li>
-							  <li data-filter=".graphic">Design</li>
+							  <!-- <li class="active" data-filter="*">All</li> -->
+							  <li class="active" data-filter=".featured">Featured</li>
+							  <li data-filter=".back-end">Back-End</li>
+							  <li data-filter=".graphic">Front-End + Design</li>
+							  <li data-filter=".apis">APIs</li>
 							  <li data-filter=".game">Games</li>
-							  <!-- <li data-filter=".apps">Apps</li> -->
 							</ul>
 							<div id="projects">
-
-								<div class="project game web graphic">
+<!-- Beat The Machine -->
+								<div class="project game featured graphic">
 									<a class="open-project" href="/beat-the-machine-project">
 										<div class="project-overlay">
 											<div class="vcenter">
@@ -138,8 +140,8 @@
 									<img src="images/portfolio/beat-the-machine-demo.gif" alt="">
 								  </div>
 
-
-								   <div class="project web">
+<!-- Emotize -->
+								   <div class="project featured back-end apis">
 									<a class="open-project" href="/emotize-project">
 										<div class="project-overlay">
 											<div class="vcenter">
@@ -153,8 +155,8 @@
 									<img src="images/portfolio/emotize-intro.png" alt="">
 								  </div>
 
-
-								  <div class="project graphic apps">
+<!-- Chorus -->
+								  <div class="project graphic featured">
 									<a class="open-project" href="/chorus-project">
 										<div class="project-overlay">
 											<div class="vcenter">
@@ -165,9 +167,10 @@
 											</div>
 										</div>
 									</a>
-									<img src="images/portfolio/output2.gif" alt="">
+									<img src="images/portfolio/chorus.gif" alt="">
 								  </div>
 
+<!-- Emergency Compliment -->
 								  <div class="project graphic">
 									<a class="open-project" href="/emergency-compliment-project">
 										<div class="project-overlay">
@@ -179,7 +182,7 @@
 											</div>
 										</div>
 									</a>
-									<img src="images/portfolio/compliment-generator/compliment-generator-demo.png" alt="">
+									<img src="images/portfolio/compliment-generator/compliment.gif" alt="">
 								  </div>
 
 							 
@@ -194,7 +197,29 @@
 		</div>
 
 
+<!-- Resume -->
+		<div class="content-blocks resume hidex"> 
+										
+			<section class="content">
+				
+				<div class="block-content">
+					<h3 class="block-title">Resume</h3>
 
+
+					<div class="row">
+						<div class="col-md-12">
+						<div id="projects" class="embed-responsive" style='padding-bottom:130%'>
+							
+							<embed src="documents/Nicolai_Robles_Resume.pdf" width="80%" height="715px" type='application/pdf'>
+						</div>
+						</div>
+
+					</div>
+
+				</div>
+					
+			</section>
+		</div>
 
 
 

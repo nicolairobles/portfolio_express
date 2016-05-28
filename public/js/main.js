@@ -99,6 +99,15 @@ $('.menu-item').on( 'click', function() {
 	  // $('.menu-item').removeClass('active');
 	  $('.menu-item.contact').addClass('active');
     });
+	// Resume
+	$('.resume').on( 'click', function() { 
+	  $('.content-blocks').removeClass('showx');	
+	  $('.content-blocks').addClass('hidex');	
+	  $('.content-blocks.resume').removeClass('hidex');
+	  $('.content-blocks.resume').addClass('showx');
+	  // $('.menu-item').removeClass('active');
+	  $('.menu-item.resume').addClass('active');
+    });
 	
 	//On Click Close Blocks
 	$('#close').on( 'click', function() {
@@ -275,17 +284,17 @@ function start() {
 		  window.setTimeout(function() {			
 		  	// fade in robles
 		    $portfolio.addClass("active");		    		  
-		  }, 900);
+		  }, 700);
 
 		  window.setTimeout(function() {			
 		  	// fade in robles
 		    $resume.addClass("active");		    		  
-		  }, 1300);
+		  }, 900);
 
 		  window.setTimeout(function() {			
 		  	// fade in robles
 		    $contact.addClass("active");		    		  
-		  }, 1700);		
+		  }, 1100);		
 		  
 		  
 		  // fade in showreel etc

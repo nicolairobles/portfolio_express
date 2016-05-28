@@ -12,9 +12,12 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 app.set("view engine", "ejs");
 
-// Homepage Link
+// Homepage + Main Links
 app.get("/", function(req, res){
 	res.render("home")
+})
+app.get("/portfolio", function(req, res){
+	res.render("portfolio")
 })
 // Project Story Links
 app.get("/emotize-project", function(req, res){

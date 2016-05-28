@@ -1964,11 +1964,12 @@ img, iframe, input {
 a {
   color: #333;
   text-decoration: none; }
-a.resume-nav {
-  color: #333;
-  text-decoration: none; }
 /* line 44, ../sass/main/_main.scss */
 a:hover {
+  text-decoration: none; 
+  color: inherit;
+}
+a:focus {
   text-decoration: none; 
   color: inherit;
 }
@@ -1976,15 +1977,11 @@ a.portfolio {
   text-decoration: none; 
   color: white;
 }
-a.resume {
-  text-decoration: none; 
-  color: white;
-}
-a.resume:visited {
-  text-decoration: none; 
-  color: white;
-}
 a.portfolio:hover {
+  text-decoration: none; 
+  color: white;
+}
+a.resume {
   text-decoration: none; 
   color: white;
 }
@@ -1992,11 +1989,21 @@ a.resume:hover {
   text-decoration: none; 
   color: white;
 }
-a:focus {
+a.resume:visited {
   text-decoration: none; 
-  color: inherit;
+  color: white;
 }
-
+a.resume-nav {
+  color: #333;
+  text-decoration: none; }
+a.contact {
+  text-decoration: none; 
+  color: white;
+}
+a.contact:hover {
+  text-decoration: none; 
+  color: white;
+}
 /* line 48, ../sass/main/_main.scss */
 p {
   font-family: Times, serif;
