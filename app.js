@@ -26,9 +26,15 @@ app.get("/chorus-project", function(req, res){
 app.get("/beat-the-machine-project", function(req, res){
 	res.render("projects/beat-the-machine")
 })
+app.get("/emergency-compliment-project", function(req, res){
+	res.render("projects/emergency-compliment")
+})
 // Live Project Links
 app.get("/beat-the-machine", function(req, res){
 	res.render("projects/live/beat-the-machine/index")
+})
+app.get("/pokemon", function(req, res){
+	res.render("projects/live/pokemon/pokemon")
 })
 
 // Resume Link
