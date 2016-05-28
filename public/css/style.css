@@ -2228,3 +2228,7 @@ h4 {
 
 
 
+img{
+    filter: drop-shadow(0px 5px 5px);
+    -webkit-filter: drop-shadow(0px 5px 5px );
+}
