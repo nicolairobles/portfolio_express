@@ -75,7 +75,7 @@
 		  	seconds--;
 		  	timer.text(seconds);
  	 	}
-  	} 
+	} 
 // 2-PLAYER GAME
 // Switch Players Function
 	var switchPlayer = function(){
