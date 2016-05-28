@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Timed Tic Tac Toe</title>
+	<link rel="stylesheet" href="projects/beat-the-machine/css/tictactoe.css">
+	<script src="projects/beat-the-machine/js/jquery-1.11.3.min.js"></script>
+	<script src="projects/beat-the-machine/js/jquery-ui.js"></script>
+</head>
+
+<body>
+	<div class = "opening" >
+		<img class = "opening tictactoe" src = "projects/beat-the-machine/img/tictactoeicon.png">
+		<div class = "opening cage" >
+			<a class = "button two-player-game" >2-Player Game</a>
+			<a class = "button play-computer" >Play Computer</a>
+		</div>
+	</div>
+	<div id ="game_screen">
+		<!-- container for Tic Tac Toe board -->
+		<div id="body-container">
+		<!-- Tic Tac Toe Structure -->
+		<!--  1 a  |  1 b |  1 c  -->
+		<!--  2 a  |  2 b |  2 c  -->
+		<!--  3 a  |  3 b |  3 c  -->
+		<!-- row 1 -->
+			<div class="one a box"></div>
+			<div class="one b box"></div>
+			<div class="one c box"></div>
+		<!-- row 2 -->
+			<div class="two a box"></div>
+			<div class="two b box"></div>
+			<div class="two c box"></div>
+		<!-- row 3 -->
+			<div class="three a box"></div>
+			<div class="three b box"></div>
+			<div class="three c box"></div>
+		<!-- Timer -->
+		<div class="timer">5</div>
+		</div>
+	</div>
+		
+</body>
+	<script type="text/javascript" src="projects/beat-the-machine/js/tictactoe.js"></script>
+</html>

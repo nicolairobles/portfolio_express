@@ -15,6 +15,7 @@ app.set("view engine", "ejs");
 app.get("/", function(req, res){
 	res.render("home")
 })
+// Project Story Links
 app.get("/emotize-project", function(req, res){
 	res.render("projects/emotize")
 })
@@ -24,9 +25,10 @@ app.get("/chorus-project", function(req, res){
 app.get("/beat-the-machine-project", function(req, res){
 	res.render("projects/beat-the-machine")
 })
-// app.get("/beat-the-machine", function(req, res){
-// 	res.render("projects/live/beat-the-machine")
-// })
+// Live Project Links
+app.get("/beat-the-machine", function(req, res){
+	res.render("projects/live/beat-the-machine/index")
+})
 
 app.get('/resume', function(request, response){
   var tempFile="./public/documents/Nicolai_Robles_Resume.pdf";
