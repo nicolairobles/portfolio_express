@@ -6,12 +6,13 @@ var express 	= require("express"),
 	mongoose 		= require("mongoose"),
   fs 					= require('fs')
   
+// Setup paths & configurations
 app.createServer;
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 app.set("view engine", "ejs");
 
-
+// Homepage Link
 app.get("/", function(req, res){
 	res.render("home")
 })
@@ -30,6 +31,7 @@ app.get("/beat-the-machine", function(req, res){
 	res.render("projects/live/beat-the-machine/index")
 })
 
+// Resume Link
 app.get('/resume', function(request, response){
   var tempFile="./public/documents/Nicolai_Robles_Resume.pdf";
   fs.readFile(tempFile, function (err,data){
