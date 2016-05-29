@@ -300,6 +300,7 @@ function start() {
 		
 		  // fade in nicolai
 		  $(".nicolai").addClass("active");
+	    $(".bg-image").addClass("active");		    		  
 		  
 		  // reduce bigL speed
 		  bigL1 = 200;
@@ -319,17 +320,14 @@ function start() {
 		  }, 600);
 
 		  window.setTimeout(function() {			
-		  	// fade in robles
 		    $portfolio.addClass("active");		    		  
 		  }, 700);
 
 		  window.setTimeout(function() {			
-		  	// fade in robles
 		    $resume.addClass("active");		    		  
 		  }, 900);
 
 		  window.setTimeout(function() {			
-		  	// fade in robles
 		    $contact.addClass("active");		    		  
 		  }, 1100);		
 		  

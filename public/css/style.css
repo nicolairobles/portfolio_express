@@ -289,10 +289,21 @@ strong, small {
     height: 100%;
     position: absolute;
     overflow: hidden;
-    background: url(../images/output.gif) #333 40% 40%;
+    background: url(../images/output.gif) #000000 40% 40%;
     background-size: cover;
     /*-webkit-filter: brightness(20%);*/
     /*filter: brightness(20%);*/
+    -webkit-transition: all 3s ease-in;
+    -moz-transition: all 3s ease-in;
+    -o-transition: all 3s ease-in;
+    transition: all 3s ease-in;
+    opacity: 0;
+}
+
+
+    /* line 109, ../sass/main/_main.scss */
+.bg-image.active {
+    opacity: 1; 
 }
 
 /*.fullscreen-bg {
@@ -1927,7 +1938,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   /*color: white;*/
   letter-spacing: 0.2em;
-  background: #090909;
+  background: #000000;
   overflow-x: hidden;
   overflow-y: scroll; }
   @media only screen and (min-width: 1px) and (max-width: 759px) {
@@ -2218,8 +2229,6 @@ h4 {
     -o-transition: all 0.2s ease-in-out 0;
     transition: all 0.2s ease-in-out 0;
     border-bottom: 1px solid transparent; }
-
-
 
 
 img{
