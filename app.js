@@ -4,10 +4,12 @@ var express 	= require("express"),
 	pry 				= require("pryjs"),
 	bodyParser 	= require("body-parser"), 
 	mongoose 		= require("mongoose"),
-  fs 					= require('fs')
-  
+  fs 					= require('fs'),
+  compressor  = require('node-minify'),
+  compression = require('compression')
 
 // Setup paths & configurations
+app.use(compression())
 app.createServer;
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
@@ -46,6 +48,9 @@ app.get("/beat-the-machine-project", function(req, res){
 app.get("/emergency-compliment-project", function(req, res){
 	res.render("projects/emergency-compliment")
 })
+
+
+// FILE MINIFICATION
 
 
 // SERVER SETUP
