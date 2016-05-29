@@ -303,7 +303,19 @@ strong, small {
 
     /* line 109, ../sass/main/_main.scss */
 .bg-image.active {
-    opacity: 1; 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    background: url(../images/output.gif) #000000 40% 40%;
+    background-size: cover;
+    /*-webkit-filter: brightness(20%);*/
+    /*filter: brightness(20%);*/
+    -webkit-transition: all 3s ease-in;
+    -moz-transition: all 3s ease-in;
+    -o-transition: all 3s ease-in;
+    transition: all 3s ease-in;
+    opacity: 1;
 }
 
 /*.fullscreen-bg {
