@@ -21,7 +21,11 @@
 
 			<h3>Concept - A Speech Practicing Video App to Help Calibrate Your Emotions</h3>
 
-			<p class="project-description">Emotize is a speech practicing video app created in partnership with Ariel Hauter, Jigar Patel, and Dan Lynn for a General Assembly Product Management Immersive course project. Ariel and Jiggar conceptualized the market potential for Emotize and built the framework for the Emotize business plan. I developed the front-end, back-end, and everything in between.</p>
+			<p class="project-description">Emotize is a speech practicing video app created in partnership with Ariel Hauter, Jigar Patel, and Dan Lynn for a General Assembly Product Management Immersive course project. Ariel and Jiggar conceptualized the market potential for Emotize and built the framework for the Emotize business plan. I developed the front-end and back-end. </p>
+			<br>
+			<p class="project-description">The project is currently in-progress as I'm transplanting all processing to background jobs with Sidekiq/Redis and integrating Ziggeo video recording. See <a class="fa fa-github" target="_blank" href="https://github.com/nicolairobles/emotize"> repo</a> for current progress, specially <a class="fa fa-github" target="_blank" href="https://github.com/nicolairobles/emotize/blob/master/app/controllers/videos_controller.rb"> videos_controller.rb</a> where most of the magic happens.</p>
+
+			
 			<br>
 			<br>
 			<h3>Technology</h3>
@@ -40,17 +44,32 @@
 
 			<br>
 			<br>
-			<h3>Challenge - Using the Microsoft Emotion Image API to Process Videos</h3>
 
+			<h3>Challenge - Using the Microsoft Emotion Image API to Process Videos</h3>
+			<p class="project-description">The Microsoft Emotion Image API is a Cognitive Services API that quantifies the emotional expressions exhibited in any given image. The data captures eight emotions: anger, contempt, disgust, fear, happiness, neutral, sadness, and surprise. Cumulatively, the eight data-points add to 1.</p> 
+			<br>
+			<p class="project-description">Our desire, however, was to gain insight into the emotions expressed in video. To accomplish this, we had to create an assembly-line of video data that could:</p>
+			<br>
+			<ul  class="fa-ul">
+				<li><i class="fa-li fa fa-check-square"></i>Splice video into frames</li>
+				<li><i class="fa-li fa fa-check-square"></i>Send frames to the API</li>
+				<li><i class="fa-li fa fa-check-square"></i>Create records of each frame in our database with corresponding emotional data</li>
+				<li><i class="fa-li fa fa-check-square"></i>Feed database data to HighCharts chart to visualize data</li>
+			</ul>
+			<p class="project-description">
+			</p>
 			<div class="project-media">
 				<h4>Sample Emotional Data Output From A Mark Zuckerberg Video Snippet</h4>
 				  <img src="images/portfolio/emotize-sample.png" alt="" />
 			</div> 
 			<br>
 			<br>
-			<h3>Coming Soon</h3>
+			<br>
+			<h3>Final Product - Coming Soon</h3>
+			<h4><a class="fa fa-github" target="_blank" href="https://github.com/nicolairobles/emotize"> Emotize Github Repository</a></h4>
+			<p class="project-description">Live link, prototype sketches, code samples, and insight into our challenges coming soon.</p>  
+			
 
-			<p class="project-description">Live link, prototype sketches, code samples, and insight into our challenges coming soon</p>  
 		</div>
 	</section>
  </div>
