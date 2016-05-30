@@ -51,8 +51,9 @@ app.get("/emergency-compliment-project", function(req, res){
 
 
 // FILE MINIFICATION (CMDLN)
-// uglifyjs main.js >> main.min.js
-// uglifyjs smooth-scroll.js >> smooth-scroll.min.js
+// cat jquery-1.11.3.min.js bootstrap.min.js jquery.isotope.min.js jquery.placeholder.min.js smooth-scroll.min.js main.min.js > meta.js
+// uglifyjs smooth-scroll.js > smooth-scroll.min.js
+// cat animate.css bootstrap.min.css font-awesome.min.css style.css > meta.css
 
 // SERVER SETUP
 app.listen(process.env.PORT || 4000, function(){
