@@ -48,6 +48,9 @@ app.get("/beat-the-machine-project", function(req, res){
 app.get("/emergency-compliment-project", function(req, res){
 	res.render("projects/emergency-compliment")
 })
+app.get("/nielsen-word-cloud-project", function(req, res){
+	res.render("projects/nielsen-word-cloud")
+})
 
 
 // FILE MINIFICATION (CMDLN)

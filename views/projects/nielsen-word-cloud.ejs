@@ -1,0 +1,91 @@
+<%include ../partials/header %> 
+
+<div class="inline-menu-container showx">
+		<ul class="inline-menu">
+			<li class="fa fa-arrow-left resume" style="text-transform: uppercase; border-right: none"><a class="resume-nav" href="/" target="_blank"> nicolairobles.com</a></li>
+			<li id="close" style="color: white">&times;</li>
+		</ul>
+	</div>
+
+
+<div id="project">
+	<section class="content" style="background: white">
+		<div class="block-content">			
+			<div class="project-title">
+				<h2>Nielsen Word Cloud  ·  <span style="text-transform:lowercase; font-family:Times, serif;">Jun 2016</span> · <a class="fa fa-github" target="_blank" href="https://github.com/nicolairobles/nielsen-word-cloud-dev"></a></h2>
+				<p class="tags">Data Visualization</p>
+			</div>
+			<br>
+			<h3>Concept · An API to Power Data Visualization</h3>
+
+			<p class="project-description">Nielsen hosts an annual conference, Consumer 360, where respected thought leaders and industry experts share their experiences to help attendees better understand the rapidly changing landscapes of advertising, media and retail, as well as digital, tech and more.</p>	
+			<br>		
+			<p class="project-description">Nielsen needed a tech solution to facilitate the aggregation of ideas during different panel discussions and to visualize these collective ideas in a dynamically updating word cloud</p>
+
+			<div class="project-media">
+				<h4><a target="_blank" href="http://107.170.22.87:8090/Beyond-Reach-The-Rise-of-Accountability-Metrics:question-1/results" > LINK: Real results page from over 90 participants</a></h4>
+				  <img src="images/portfolio/word-cloud.gif" alt="" />
+			</div> 
+			<br>
+			<br>
+			<br>
+			<h3>Technology</h3>
+			<p class="project-description">
+				<ul class="fa-ul">
+					<li><i class="fa-li fa fa-check-square"></i>MongoDB</li>
+					<li><i class="fa-li fa fa-check-square"></i>Express</li>
+					<li><i class="fa-li fa fa-check-square"></i>Angular</li>
+					<li><i class="fa-li fa fa-check-square"></i>Node.js</li>
+					<li><i class="fa-li fa fa-check-square"></i>D3.js</li>
+					<li><i class="fa-li fa fa-check-square"></i>D3.cloud.js</li>
+				</ul>
+			</p>
+
+			<br>
+			<br>
+
+			<h3>Challenge · Creating a custom parsing algorithm for entries</h3>
+
+			<p class="project-description">
+			The key challenge in this project was creating a database that would feed the right type of data to the word cloud.  
+			
+			</p>
+			<br>
+			<p class="project-description">I created an efficient algorithm that would take any entry (ie, a word or a phrase) and insert unique words into MongoDB once, while increasing the count of repeat words. The count of each word would then correspond to the font-size of each word rendered in the word cloud through D3. Upon inserting each unique word, I gave it a unique color based on Nielsen branding.
+			</p>
+			<div class="project-media">
+				<h4>Example API route of MongoDB JSON data:</h4>
+				<img src="images/portfolio/word-cloud/word-cloud-api.png" alt="" />
+			</div> 
+
+			<br>
+			<br>
+
+			<h3>Final Product</h3>
+			<p class="project-description">I began by parsing the individual entries and creating a local JSON object to keep track of unique words within a given entry.
+			</p>
+			<br>
+			<p class="project-description">Then I compared this JSON object with the database to check if any of the words in this entry already existed in the database. If they did, I would mark the JSON object as a word with a match and then in a later function increase the count for that word. If any of the words in the new entry didn't already exist in the database I would mark them as a non-matched word and then I would create a new database entry in a later function.
+			</p>
+			
+
+			<div style="" class="project-media">
+				<h4><a class="fa fa-github" target="_blank" href="https://github.com/nicolairobles/nielsen-word-cloud-dev"> Nielsen Word Cloud Github Repository</a></h4>
+				<h4>Parse Entry</h4>
+
+			  <img src="images/portfolio/word-cloud/entry-parse.png" alt="" />
+			  <br>
+			  <br>
+				<h4>Update Database</h4>
+
+			  <img src="images/portfolio/word-cloud/update-db1.png" alt="" />
+			  <img src="images/portfolio/word-cloud/update-db2.png" alt="" />
+			</div> 
+   
+		</div>
+	</section>
+ </div>
+
+
+
+<%include ../partials/footer %> 
